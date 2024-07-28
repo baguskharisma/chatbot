@@ -72,7 +72,7 @@ const Chat = () => {
           className="absolute bottom-5 bg-stone-950 md:bottom-4 inset-x-4 border w-11/12 h-14 rounded-full flex flex-row"
         >
           <textarea
-            className="w-10/12 text-sm resize-none overflow-hidden pt-4 bg-transparent ps-4 focus:outline-none placeholder:text-sm"
+            className="w-10/12 text-sm resize-none overflow-hidden pt-4 bg-transparent ps-6 focus:outline-none placeholder:text-sm"
             value={input}
             placeholder="Type your message here..."
             onChange={handleInputChange}
