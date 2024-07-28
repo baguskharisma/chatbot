@@ -40,7 +40,6 @@ const Chat = () => {
                     alt="profilePic"
                     className="object-cover object-center"
                   />
-                  <AvatarFallback>CE</AvatarFallback>
                 </Avatar>
               )}
               <div
@@ -55,7 +54,7 @@ const Chat = () => {
                     <Typewriter text={m.content} />
                     <button
                       type="button"
-                      className="bg-muted w-6 h-6 rounded-full mt-2"
+                      className="bg-muted w-7 h-7 rounded-full mt-2"
                       onClick={handleRegenerate}
                     >
                       <RotateCcw className="w-3 h-3 stroke-stone-50 m-auto" />
@@ -70,10 +69,10 @@ const Chat = () => {
         </ScrollArea>
         <form
           onSubmit={handleSubmit}
-          className="absolute bottom-5 bg-stone-950 md:bottom-4 inset-x-4 border w-11/12 h-12 rounded-full flex flex-row"
+          className="absolute bottom-5 bg-stone-950 md:bottom-4 inset-x-4 border w-11/12 h-14 rounded-full flex flex-row"
         >
           <textarea
-            className="w-10/12 text-xs resize-none overflow-hidden py-4 bg-transparent ps-4 focus:outline-none placeholder:text-xs"
+            className="w-10/12 text-sm resize-none overflow-hidden pt-4 bg-transparent ps-4 focus:outline-none placeholder:text-sm"
             value={input}
             placeholder="Type your message here..."
             onChange={handleInputChange}
@@ -81,7 +80,7 @@ const Chat = () => {
           />
           <button
             type="submit"
-            className="bg-stone-50 absolute bottom-2 right-2 w-8 h-8 rounded-full"
+            className="bg-stone-50 absolute bottom-3 right-3 w-8 h-8 rounded-full"
           >
             <ArrowUp className="w-5 h-5 stroke-stone-950 m-auto" />
           </button>
