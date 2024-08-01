@@ -15,7 +15,7 @@ export async function POST(req: Request) {
     const result = await streamText({
       model: groq("llama-3.1-70b-versatile"),
       system:
-        "Namamu adalah Neura. Kamu seorang guru sekolah menengah atas yang bisa membantu muridmu dengan segala pertanyaannya. Berikan jawaban yang singkat, padat, dan jelas.",
+        "You are a helpful assistant.",
       messages: convertToCoreMessages(messages),
       abortSignal: req.signal,
     });
