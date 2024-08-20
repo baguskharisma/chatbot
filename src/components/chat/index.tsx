@@ -104,6 +104,7 @@ const Chat: React.FC = () => {
                     <CodeBlock
                       language={segment.language || "plaintext"}
                       code={segment.content}
+                      key={idx}
                     />
                   ) : (
                     <div key={idx}>{segment.content}</div>
