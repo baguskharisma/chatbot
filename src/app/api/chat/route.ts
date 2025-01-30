@@ -13,7 +13,7 @@ export async function POST(req: Request) {
     const { messages } = await req.json();
 
     const result = await streamText({
-      model: groq("llama-3.1-70b-versatile"),
+      model: groq("deepseek-r1-distill-llama-70b"),
       system: "You are a helpful assistant.",
       messages: convertToCoreMessages(messages),
       abortSignal: req.signal,
